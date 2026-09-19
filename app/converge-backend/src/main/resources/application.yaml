@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: converge-backend
+  profiles:
+    active: dev
+  docker:
+    compose:
+      enabled: false
+  data:
+    mongodb:
+      uri: ${MONGODB_CONNECTION_STRING}
+      auto-index-creation: true

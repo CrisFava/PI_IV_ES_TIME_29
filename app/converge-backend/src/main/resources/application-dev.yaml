@@ -1,0 +1,14 @@
+spring:
+  mongodb:
+    uri: ${MONGODB_CONNECTION_STRING}
+    database: ${MONGODB_DATABASE_NAME:converge-dev}
+  data:
+    mongodb:
+      uri: ${MONGODB_CONNECTION_STRING}
+      database: ${MONGODB_DATABASE_NAME:converge-dev}
+
+logging:
+  level:
+    org.springframework.data.mongodb: INFO
+    org.mongodb.driver: INFO
+    com.converge.api: DEBUG
