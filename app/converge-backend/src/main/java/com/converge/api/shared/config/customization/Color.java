@@ -1,8 +1,5 @@
 package com.converge.api.shared.config.customization;
 
-import java.util.HashMap;
-import java.util.Stack;
-
 public enum Color {
     GREEN("\u001B[32m"),
     RED("\u001B[31m"),
@@ -17,10 +14,6 @@ public enum Color {
 
     @Override
     public String toString() {
-        Stack<String> s = new Stack<>();
-        HashMap hm = new HashMap();
-
-        hm.get ("code", code);
         return code;
     }
 }
